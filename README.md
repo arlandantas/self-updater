@@ -8,4 +8,4 @@ A simple project that creates a self-update page with arguments from URL.
 - `PAGETITLE` (opitional) - The page/tab browser title (if not present "Arlan Dantas | Self-updater" will be considered)
 
 ### Example
-[https://arlandantas.github.io/self-updater?t=20&title=Autoupdate Globo.com#https://globo.com](https://arlandantas.github.io/self-updater?t=20&title=Autoupdate%Globo.com#https://globo.com)
+[https://arlandantas.github.io/self-updater?t=20&title=Arlan Dantas#https://arlandantas.github.io](https://arlandantas.github.io/self-updater?t=20&title=Arlan%20Dantas#https://arlandantas.github.io)
