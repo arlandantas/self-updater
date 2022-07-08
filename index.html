@@ -32,7 +32,7 @@
         const targetURL = locationURL.hash.replace("#", '')
         document.querySelector("iframe").src = targetURL ? targetURL : ""
         
-        const timeout = locationURL.searchParams.get("t") || 610;
+        const timeout = locationURL.searchParams.get("t") || 600;
         const timeoutMeta = document.createElement("meta")
         timeoutMeta.httpEquiv = "refresh";
         timeoutMeta.content = timeout;
