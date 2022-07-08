@@ -27,10 +27,13 @@
       webkitallowfullscreen="true"
     ></iframe>
     <script>
+        const updaterIframe = document.querySelector("iframe")
         const locationURL = new URL(window.location.href)
         
-        const targetURL = locationURL.hash.replace("#", '')
-        document.querySelector("iframe").src = targetURL ? targetURL : ""
+        const targetURL = locationURL.hash
+            .replace('#', '')
+            .replace(/&amp;/g, '&')
+        updaterIframe.src = targetURL ? targetURL : ""
         
         const timeout = locationURL.searchParams.get("t") || 600;
         const timeoutMeta = document.createElement("meta")
